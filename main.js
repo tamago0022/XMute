@@ -11,7 +11,7 @@ function createWindow() {
       nodeIntegration: true,
       contextIsolation: false,
     },
-    icon: path.join(__dirname, 'resources', 'ico.ico')  // Asegúrate de que esta línea esté configurada
+    icon: path.join(__dirname, 'resources', 'ico.ico')
   });
 
   win.loadFile('index.html');
