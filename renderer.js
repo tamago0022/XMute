@@ -8,7 +8,7 @@ window.onload = () => {
   setTimeout(() => {
     document.getElementById('loadingScreen').style.display = 'none';
     document.getElementById('mainContent').style.display = 'flex';
-  }, 2000); // 2 segundos para que la animación termine
+  }, 2000);
 };
 
 document.getElementById('selectButton').addEventListener('click', () => {
@@ -75,7 +75,6 @@ function removeAudioFromVideos(files) {
 }
 
 ipcRenderer.on('progress', (event, progress) => {
-  // Actualiza el progreso si es necesario
 });
 
 ipcRenderer.on('audio-removed', (event, outputFilePath) => {
